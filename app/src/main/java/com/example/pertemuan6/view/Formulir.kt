@@ -1,6 +1,5 @@
 package com.example.pertemuan6.view
 
-import android.R.attr.label
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -70,7 +69,17 @@ fun FormIsian(
                 .padding(20.dp)
                 .width(250.dp),
                 thickness = 1.dp,
-                color = Color.Red)
+                color = Color.Red
+            )
+            OutlinedTextField(
+                value = "",
+                singleLine = true,
+                modifier = Modifier
+                    .width(250.dp),
+                label = { Text(text = "Alamat") },
+                onValueChange = {},
+            )
+
 
 
         }
